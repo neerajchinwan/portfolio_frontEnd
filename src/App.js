@@ -1,20 +1,37 @@
 import './App.css';
-import About from './Components/about/About';
-import Home from './Components/home/Home';
-import {BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import Work from './Components/work/Work';
-import ToDoList from './Components/toDoList/ToDoList';
+import HomePage from './pages/HomePage';
+import {
+  createBrowserRouter,
+  RouterProvider,
+  Route,
+  Link,
+} from "react-router-dom";
+import AboutPage from './pages/AboutPage';
+import MyWorkPage from './pages/MyWorkPage';
+import ProjectPage from './pages/ProjectPage';
 
 function App() {
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <HomePage />,
+    },
+    {
+      path: "/about",
+      element: <AboutPage />
+    },
+    {
+      path: "/work",
+      element: <MyWorkPage />
+    },
+    {
+      path: "/todo",
+      element: <ProjectPage />
+    }
+  ]);
+
   return (
-    <Router>
-      <Routes>
-        <Route exact path='/' element={<Home />} />
-        <Route exact path='/about' element={<About />} />
-        <Route exact path='/work' element={<Work />} />
-        <Route exact path='/todo' element={<ToDoList />} />
-      </Routes>
-    </Router>
+    <RouterProvider router={router} />
   );
 }
 

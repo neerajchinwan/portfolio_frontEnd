@@ -1,5 +1,5 @@
 import React from "react";
-import ThemeCard from "../../common/ThemeCard";
+import ThemeCard from "../../common/component/ThemeCard";
 import { Grid } from '@mui/material';
 
 function FrontEndTechnology(){

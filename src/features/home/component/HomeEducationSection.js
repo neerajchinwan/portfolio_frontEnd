@@ -34,10 +34,10 @@ function HomeEducationSection() {
         }
     ]
 
-    const heading = `{ Education !!! }`
+    const heading = `EDUCATION`
 
     return (<Box component='div'>
-        <Typography variant="h2" fontSize={40} textAlign='center' sx={{ color: '#5B0888' }}>{heading}</Typography>
+        <Typography variant="h2" fontSize={35} textAlign='center' sx={{ color: '#5B0888', letterSpacing: '2px'}}>{heading}</Typography>
         <Box component='div' sx={{ height: 40 }}></Box>
         <TableContainer component={Paper} sx={{ borderRadius: '7px' }}>
             <Table aria-label='Education Table'>

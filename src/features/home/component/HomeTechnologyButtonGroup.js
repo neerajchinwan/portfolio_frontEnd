@@ -16,10 +16,12 @@ function HomeTechnologyButtonGroup(props) {
     }
 
     const buttonActive = {
-        backgroundColor : '#EC53B0',
+        backgroundColor : '#fff',
         '&:hover': {
-            backgroundColor: '#EC53B0'
-        }
+            backgroundColor: '#fff'
+        },
+        color: '#5B0888',
+        fontWeight: '700'
     }
 
     const normalButtonStyle = {

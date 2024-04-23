@@ -8,24 +8,24 @@ import {
     CardActions
 } from '@mui/material';
 
-function ThemeCard(props) {
+function ThemeCard({name, description, buttonOneTitle, buttonTwoTitle, url}) {
     return (<Card aria-label="Technology Card">
         <CardMedia
             sx={{ height: 140 }}
-            image={props.url}
+            image={url}
             title="green iguana"
         />
         <CardContent>
             <Typography gutterBottom variant="h5" component="div">
-                {props.name}
+                {name}
             </Typography>
             <Typography variant="body2" color="#333">
-                {props.description}
+                {description}
             </Typography>
         </CardContent>
         <CardActions>
-            <Button size="small">{props.buttonOneTitle}</Button>
-            <Button size="small">{props.buttonTwoTitle}</Button>
+            <Button size="small">{buttonOneTitle}</Button>
+            <Button size="small">{buttonTwoTitle}</Button>
         </CardActions>
     </Card>)
 }

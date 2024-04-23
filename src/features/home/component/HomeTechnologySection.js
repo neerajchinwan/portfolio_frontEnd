@@ -15,15 +15,16 @@ function HomeTechnologySection() {
         backEnd: <BackendTechnology></BackendTechnology>
     }
 
-    const Heading = `{ Technologies I Know !!! }`
+    const Heading = `TECHNOLOGIES I KNOW`
 
 
     return (<Box component='div'>
         <Typography 
             variant="h2" 
-            fontSize={40} 
+            fontSize={35} 
             textAlign='center' 
             color='#5B0888'
+            sx={{letterSpacing: '2px'}}
         >
              {Heading}</Typography>
         

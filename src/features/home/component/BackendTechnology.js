@@ -1,7 +1,7 @@
 import React from "react";
 import { Grid } from '@mui/material';
 
-import ThemeCard from "../../common/ThemeCard";
+import ThemeCard from "../../common/component/ThemeCard";
 
 function BackendTechnology(){
 

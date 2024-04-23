@@ -1,12 +1,13 @@
 import React from "react";
 import { Box, Paper, Stack, Typography, Button, Link } from "@mui/material";
 import Slider from 'react-slick'
+import { hover } from "@testing-library/user-event/dist/hover";
 
 
 
 function HomeLiveWorkSection() {
 
-    const liveWorkHeading = `{ Some Live Work !!! }`
+    const liveWorkHeading = `SOME LIVE WORK`
 
     const settings = {
         dots: false,
@@ -15,6 +16,13 @@ function HomeLiveWorkSection() {
         slidesToShow: 1,
         slidesToScroll: 1
     };
+
+    const buttonStyle={
+        background: "#5B0888",
+        '&:hover': {
+            background: "#5B0888"
+        }
+    }
 
     const liveWorkObj = [
         {
@@ -46,9 +54,10 @@ function HomeLiveWorkSection() {
     return (<Box component='div'>
         <Typography
             variant="h2"
-            fontSize={40}
+            fontSize={32}
             textAlign='center'
             color='#5B0888'
+            sx={{letterSpacing: '2px'}}
         >
             {liveWorkHeading}
         </Typography>
@@ -71,9 +80,9 @@ function HomeLiveWorkSection() {
                                 }}
                             />
                             <Box width='50%' component='div'>
-                                <Typography variant="h3" fontSize={30} color='#5B0888'>{item.websiteName}</Typography>
+                                <Typography variant="h3" fontSize={25} color='#5B0888'>{item.websiteName}</Typography>
                                 <Typography variant="body2" fontSize={16} mt={3} mb={5} color='#333' fontStyle='italic'>{item.description}</Typography>
-                                <Button variant='outlined'><Link href={item.websiteUrl} underline="none" target='_blank'>Jump To the website</Link> </Button>
+                                <Button variant='contained' sx={buttonStyle}><Link sx={{color: '#fff'}}  href={item.websiteUrl} underline="none" target='_blank'>Jump To the website</Link> </Button>
                             </Box>
                         </Stack>
                     </Paper>
