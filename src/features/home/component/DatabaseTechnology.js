@@ -8,12 +8,14 @@ function DatabaseTechnology(){
         { 
             imageUrl: 'images/mongodb.png',
             name: 'MONGODB',
-            description: 'MongoDB is a NoSQL database system known for its flexibility. It stores data in a document format, making it ideal for scalable and dynamic applications..'
+            description: 'MongoDB is a NoSQL database system known for its flexibility. It stores data in a document format, making it ideal for scalable and dynamic applications..',
+            url:'https://www.mongodb.com/'
         },
         { 
             imageUrl: 'images/mongoose.png', 
             name: 'MONGOOSE',
-            description: 'Mongoose is an elegant Node.js library that simplifies MongoDB interactions by providing a schema-based modeling and querying system, enhancing the developer experience.'
+            description: 'Mongoose is an elegant Node.js library that simplifies MongoDB interactions by providing a schema-based modeling and querying system, enhancing the developer experience.',
+            url:'https://mongoosejs.com/'
         }
     ]
 
@@ -25,8 +27,7 @@ function DatabaseTechnology(){
                             url={item.imageUrl}
                             name={item.name}
                             description={item.description}
-                            buttonOneTitle='share'
-                            buttonTwoTitle='Learn More'
+                            huttonUrl={item.url}
                         ></ThemeCard>
                     </Grid>
             })

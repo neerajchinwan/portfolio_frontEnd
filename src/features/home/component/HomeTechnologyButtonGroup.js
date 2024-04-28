@@ -4,8 +4,12 @@ import {
     ButtonGroup,
     Button
 } from '@mui/material';
+import { useMediaQuery } from 'react-responsive';
 
 function HomeTechnologyButtonGroup(props) {
+    const iSDesktop = useMediaQuery({
+        query: '(min-width: 768px)'
+    })
 
     const [technology, setTechnology] = useState('frontEnd');
 
@@ -37,6 +41,7 @@ function HomeTechnologyButtonGroup(props) {
             aria-label='Technology Button Group'
             variant='contained'
             sx={{ margin: 'auto' }}
+            orientation={iSDesktop ? 'horizontal': 'vertical'}
         >
             <Button 
                 onClick={handleClickTechnology} 

@@ -25,7 +25,7 @@ function App() {
       element: <MyWorkPage />
     },
     {
-      path: "/todo",
+      path: "/mern",
       element: <ProjectPage />
     }
   ]);

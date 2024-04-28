@@ -17,13 +17,13 @@ function HomePage() {
 
             {/* <Box component='div' sx={{ height: 80 }} ></Box> */}
 
-            <Container maxWidth='xl' sx={{backgroundImage: 'url("images/homePageHeroImg2.png")', backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPosition: 'center', opacity:'1'}}>
+            <Container maxWidth='xl' sx={{ backgroundImage: 'url("images/homePageHeroImg2.png")', backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPosition: 'center', opacity: '1' }}>
                 <Container maxWidth='lg'>
-                <HomeShortDescription ></HomeShortDescription>
-                    </Container>            
+                    <HomeShortDescription ></HomeShortDescription>
+                </Container>
             </Container>
-                
-                <Container maxWidth='lg' >
+
+            <Container maxWidth='lg' >
                 <Box component='div' sx={{ height: 80 }}></Box>
                 <HomeTechnologySection></HomeTechnologySection>
                 <Box component='div' sx={{ height: 80 }}></Box>
@@ -38,7 +38,7 @@ function HomePage() {
 
                 <Box component='div' sx={{ height: 80 }}></Box> */}
             </Container>
-            
+
             <Footer></Footer>
         </>
     )

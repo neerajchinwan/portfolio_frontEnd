@@ -1,0 +1,4 @@
+.slick-prev:before, .slick-next:before{
+    color: #5B0888 !important;
+    opacity: 1 !important;
+}

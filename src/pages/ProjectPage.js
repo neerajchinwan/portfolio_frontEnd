@@ -1,10 +1,13 @@
+import Footer from "../features/footer/component/Footer";
 import Navbar from "../features/navbar/component/Navbar";
+import MyProject from "../features/projects/component/MyProject";
 
 function ProjectPage(){
     return (
         <>
             <Navbar />
-            <h2>this is about page</h2>
+            <MyProject />
+            <Footer />
         </>
     )
 }

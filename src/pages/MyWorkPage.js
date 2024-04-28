@@ -1,10 +1,13 @@
+import Footer from "../features/footer/component/Footer";
+import MyWork from "../features/myWork/component/MyWork";
 import Navbar from "../features/navbar/component/Navbar";
 
 function MyWorkPage(){
     return (
         <>
             <Navbar />
-            <h2>this is about page</h2>
+            <MyWork />
+            <Footer />
         </>
     )
 }

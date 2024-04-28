@@ -1,10 +1,13 @@
 import Navbar from "../features/navbar/component/Navbar";
+import About from '../features/about/component/About';
+import Footer from "../features/footer/component/Footer";
 
 function AboutPage(){
     return (
         <>
             <Navbar />
-            <h2>this is about page</h2>
+            <About />
+            <Footer />
         </>
     )
 }

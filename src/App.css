@@ -36,3 +36,18 @@
     transform: rotate(360deg);
   }
 }
+
+@media only screen and (max-width: 768px){
+  h1{
+    font-size: 25px !important;
+  }
+  h2{
+    font-size: 22px !important;
+  }
+  p{
+    font-size: 14px !important;
+  }
+  button{
+    font-size: 13px !important;
+  }
+}

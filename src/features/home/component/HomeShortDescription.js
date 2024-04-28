@@ -6,9 +6,12 @@ import {
     Button,
     Box
 } from '@mui/material';
+import { useMediaQuery } from "react-responsive";
 
 function HomeShortDescription() {
-
+    const isDesktop = useMediaQuery({
+        query: '(min-width:768px)'
+    })
     const allProfileImage = [
         'Images/profileImageOne.jpeg',
         'Images/profileImageTwo.jpeg',
@@ -16,6 +19,26 @@ function HomeShortDescription() {
         'Images/profileImageFour.jpeg',
         'Images/profileImageFive.jpeg'
     ]
+
+    const desktopStyle = {
+        width: '400px',
+        height: '400px',
+        objectFit: 'cover',
+        borderRadius: '50%',
+        boxShadow: '2px 2px 5px 5px rgba(0, 0, 0, 0.25)',
+        objectPosition: 'top'
+    }
+
+    const mobileStyle = {
+        width: '150px',
+        height: '150px',
+        objectFit: 'cover',
+        borderRadius: '50%',
+        boxShadow: '2px 2px 5px 5px rgba(0, 0, 0, 0.25)',
+        objectPosition: 'top',
+        margin: 'auto',
+        display: 'flex'
+    }
 
     function selectImage() {
         return Math.floor(Math.random() * 5);
@@ -26,24 +49,17 @@ function HomeShortDescription() {
     return (
         <Grid container spacing={7} sx={{paddingTop: '80px', paddingBottom: '80px'}}>
 
-            <Grid item md={5} aria-label="short-introduction">
+            <Grid item md={5} xs={12} aria-label="short-introduction">
                 {/* <Box component="img" src='https://source.unsplash.com/random' sx={{ */}
                 <Box 
                     component="img" 
                     src={allProfileImage[selectImage()]} 
-                    sx={{
-                        width: '400px',
-                        height: '400px',
-                        objectFit: 'cover',
-                        borderRadius: '50%',
-                        boxShadow: '2px 2px 5px 5px rgba(0, 0, 0, 0.25)',
-                        objectPosition: 'top'
-                    }} 
+                    sx={isDesktop ? desktopStyle : mobileStyle} 
                     alt="profile-image"></Box>
             </Grid>
 
-            <Grid item md={7} sx={{ margin: 'auto' }}>
-                <Typography variant="h1" fontSize={45} color='#fff' sx={{letterSpacing: '2px'}}>{heading}</Typography>
+            <Grid item md={7} xs={12} sx={{ margin: 'auto' }}>
+                <Typography variant='h1' component='h1' fontSize={45} color='#fff' sx={{letterSpacing: '2px'}}>{heading}</Typography>
                 <Typography
                     variant="body1"
                     fontSize={16}

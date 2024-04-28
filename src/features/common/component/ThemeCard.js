@@ -5,10 +5,11 @@ import {
     Typography,
     CardContent,
     Button,
-    CardActions
+    CardActions,
+    Link
 } from '@mui/material';
 
-function ThemeCard({name, description, buttonOneTitle, buttonTwoTitle, url}) {
+function ThemeCard({name, description, url, buttonUrl}) {
     return (<Card aria-label="Technology Card">
         <CardMedia
             sx={{ height: 140 }}
@@ -24,8 +25,7 @@ function ThemeCard({name, description, buttonOneTitle, buttonTwoTitle, url}) {
             </Typography>
         </CardContent>
         <CardActions>
-            <Button size="small">{buttonOneTitle}</Button>
-            <Button size="small">{buttonTwoTitle}</Button>
+            <Button size="small"><Link href = {buttonUrl} target='_blank'>learn more</Link></Button>
         </CardActions>
     </Card>)
 }
