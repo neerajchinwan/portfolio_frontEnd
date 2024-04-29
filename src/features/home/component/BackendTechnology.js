@@ -7,13 +7,13 @@ function BackendTechnology(){
 
     const backendTechnology = [
         { 
-            imageUrl: 'images/nodejs.webp',
+            imageUrl: 'Images/nodejs.webp',
             name: 'NODE JS',
             description: 'Node.js is a powerful JavaScript runtime environment. It enables server-side scripting, offering non-blocking, event-driven architecture for building fast and scalable network applications.',
             url: 'https://nodejs.org/en'
         },
         { 
-            imageUrl: 'images/express.png', 
+            imageUrl: 'Images/express.png', 
             name: 'EXPRESS JS',
             description: 'Express.js is a minimalist and flexible Node.js web application framework. It simplifies building robust and efficient web applications by providing essential tools and middleware.',
             url: 'https://expressjs.com/'

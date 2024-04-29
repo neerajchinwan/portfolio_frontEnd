@@ -17,7 +17,7 @@ function HomePage() {
 
             {/* <Box component='div' sx={{ height: 80 }} ></Box> */}
 
-            <Container maxWidth='xl' sx={{ backgroundImage: 'url("images/homePageHeroImg2.png")', backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPosition: 'center', opacity: '1' }}>
+            <Container maxWidth='xl' sx={{ backgroundImage: 'url("Images/homePageHeroImg2.png")', backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPosition: 'center', opacity: '1' }}>
                 <Container maxWidth='lg'>
                     <HomeShortDescription ></HomeShortDescription>
                 </Container>
