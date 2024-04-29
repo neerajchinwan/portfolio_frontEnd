@@ -1,11 +1,13 @@
 import React from "react";
 import { Box, Typography, Button, Link, Grid, Paper } from "@mui/material";
 import Slider from 'react-slick';
-import './homeLiveWorkSection.css'
+import './homeLiveWorkSection.css';
+import { useNavigate } from 'react-router-dom'
 
 
 
 function HomeLiveWorkSection() {
+    const navigate = useNavigate();
 
     const liveWorkHeading = `SOME LIVE WORK`
 
@@ -107,6 +109,26 @@ function HomeLiveWorkSection() {
                 })
             }
         </Slider>
+
+        <br />
+
+        <Button
+            onClick={() => navigate('/work')}
+            variant="contained"
+            size="large"
+            sx={{
+                backgroundColor: '#5B0888',
+                color: '#fff',
+                '&:hover': {
+                    backgroundColor: '#fff',
+                    color: '#5B0888'
+                },
+                fontWeight: '700',
+                margin: 'auto',
+                display: 'flex'
+            }}
+        >
+            Read More</Button>
 
     </Box>);
 }

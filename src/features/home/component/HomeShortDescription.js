@@ -7,53 +7,52 @@ import {
     Box
 } from '@mui/material';
 import { useMediaQuery } from "react-responsive";
+import { useNavigate } from "react-router-dom";
+import { FaGitSquare } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa6";
+import { SiLeetcode } from "react-icons/si";
 
 function HomeShortDescription() {
+    const navigate = useNavigate();
     const isDesktop = useMediaQuery({
         query: '(min-width:768px)'
     })
-    const allProfileImage = [
-        'Images/profileImageOne.jpeg',
-        'Images/profileImageTwo.jpeg',
-        'Images/profileImageThree.jpeg',
-        'Images/profileImageFour.jpeg',
-        'Images/profileImageFive.jpeg'
-    ]
 
     const desktopStyle = {
-        width: '400px',
+        width: '350px',
         height: '400px',
         objectFit: 'cover',
-        borderRadius: '50%',
+        borderRadius: '12px',
         boxShadow: '2px 2px 5px 5px rgba(0, 0, 0, 0.25)',
         objectPosition: 'top'
     }
 
     const mobileStyle = {
-        width: '150px',
+        width: '100px',
         height: '150px',
         objectFit: 'cover',
-        borderRadius: '50%',
+        borderRadius: '12px',
         boxShadow: '2px 2px 5px 5px rgba(0, 0, 0, 0.25)',
         objectPosition: 'top',
         margin: 'auto',
         display: 'flex'
     }
 
-    function selectImage() {
-        return Math.floor(Math.random() * 5);
+    const iconStyle = {
+        color: '#fff',
+        fontSize: '30px',
+        cursor: 'pointer'
     }
 
-    const heading = `INTRODUCTION`
+    const heading = `NEERAJ CHINWAN`;
 
     return (
         <Grid container spacing={7} sx={{paddingTop: '80px', paddingBottom: '80px'}}>
 
             <Grid item md={5} xs={12} aria-label="short-introduction">
-                {/* <Box component="img" src='https://source.unsplash.com/random' sx={{ */}
                 <Box 
                     component="img" 
-                    src={allProfileImage[selectImage()]} 
+                    src='Images/profileNine.jpeg' 
                     sx={isDesktop ? desktopStyle : mobileStyle} 
                     alt="profile-image"></Box>
             </Grid>
@@ -61,18 +60,31 @@ function HomeShortDescription() {
             <Grid item md={7} xs={12} sx={{ margin: 'auto' }}>
                 <Typography variant='h1' component='h1' fontSize={45} color='#fff' sx={{letterSpacing: '2px'}}>{heading}</Typography>
                 <Typography
-                    variant="body1"
-                    fontSize={16}
-                    paddingTop={2}
+                    variant="h5"
+                    component="h2"
+                    paddingTop={1}
                     paddingRight={3}
                     sx={{color: '#fff'}}
                 >
-                    Greetings, I'm Neeraj Chinwan, 28 years of age, currently residing in Delhi. While I pursued my studies in Delhi, my roots trace back to Uttarakhand. Presently, I am employed at AR Technity Pvt Ltd as a Front End Developer. My journey in this role commenced on September 23, 2021. However, I am now eager to transition my career into the realm of a full-stack developer, having recently acquired proficiency in the MERN Stack. Here, I also created my Portfolio using React technology and MUI as the front-end framework. I also have experience with Bootstrap, but I've chosen to focus on learning MUI due to its appeal and versatility. To get a glimpse of my work, please feel free to explore the "Work" section conveniently located in the navigation bar.
+                    ( MERN DEVELOPER )
                 </Typography>
-
-
-                <br />
-                <Button 
+                <Box height='10px'></Box>
+                <FaGitSquare onClick={() => window.open('https://github.com/neerajchinwan', '_blank')}  style={iconStyle} />
+                &nbsp; &nbsp;
+                <FaLinkedin onClick={() => window.open('www.linkedin.com/in/neeraj-chinwan-93b75b200', '_blank')} style={iconStyle} />
+                &nbsp; &nbsp;
+                <SiLeetcode onClick={() => window.open('https://leetcode.com/u/neeraj14chinwan/', '_blank')} style={iconStyle} />
+                <Typography
+                    variant="body1"
+                    paddingTop={1}
+                    paddingRight={3}
+                    sx={{color: '#fff'}}
+                >
+                    I started my journey as a front end developer at AR Technity Pvt Ltd on 23 sep 2021, After working more the 2 years I gain lot of intereset in backend also. So I decide to learn MERN stack to become a full stack developer
+                </Typography>
+                <Box height='10px'></Box>
+                <Button
+                    onClick= {() => navigate('/about')}
                     variant="contained" 
                     size="large" 
                     sx={{

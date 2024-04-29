@@ -25,10 +25,20 @@ function About(){
         <Container maxWidth='lg'>
             <Grid container spacing={3}>
                 <Grid item xs={12} md={5}>
-                    <img src="Images/profileImageOne.jpeg" style={imageStyle} alt="profile-image" />
+                    <img src="Images/profileSeven.jpeg" style={imageStyle} alt="profile-image" />
                 </Grid>
 
-                <Grid item xs={12} md={7}>Greetings, I'm Neeraj Chinwan, 28 years of age, currently residing in Delhi. While I pursued my studies in Delhi, my roots trace back to Uttarakhand. Presently, I am employed at AR Technity Pvt Ltd as a Front End Developer. My journey in this role commenced on September 23, 2021. However, I am now eager to transition my career into the realm of a full-stack developer, having recently acquired proficiency in the MERN Stack. Here, I also created my Portfolio using React technology and MUI as the front-end framework. I also have experience with Bootstrap, but I've chosen to focus on learning MUI due to its appeal and versatility. To get a glimpse of my work, please feel free to explore the "Work" section conveniently located in the navigation bar.</Grid>
+                <Grid item xs={12} md={7}>Hello My name is Neeraj Chinwan I experienced as a front end developer but now I am a full stack developer in MERN Stack. I have two years and six month of experience in front end development. Now I want to push myself beyond that so I choose to become a full stack developer.
+                <br />
+                <br />
+                But the challenge for me is to learn what technology so I decide to learn MERN stack. For frontend I learn React, as I already know the front end Tech Like  HTML, CSS, JS, BOOTSTRAP, WORDPRESS ETC.
+                <br />
+                <br />
+                For database I learn mongodb as it is noSql database and it is basically object oriented database in which it saves data in collection and document form so it is easy for me to understand and but after learning mongodb I came to know about mongoose which is ODM of the mongodb so mongoose is very helpful we can create schema base database using mongoose very easily
+                <br />
+                <br />
+                For Backend I learn NodeJs and express which is important for the nodejs developer so I learned how to make api. Then about MVC architectures, routes , authentication, hashing and all.
+                </Grid>
             </Grid>
         </Container>
         <Box height={50}></Box>
