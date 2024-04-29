@@ -2,23 +2,13 @@ import { Box, Container, Grid, Typography } from "@mui/material";
 import ProjectList from "../../common/component/ProjectList";
 
 function MyProject(){
-    const imageStyle = {
-        width: '80%',
-        borderRadius: '15px',
-        marginLeft: 'auto',
-        height: '400px',
-        objectFit: 'cover',
-        objectPosition: 'center'
-    }
 
     const projectList = [
         {
             id: 1,
             title: '1. Todo List',
             description: `This is the first project full stack project, I used react for front end and many other technologies for frontend like react hook form, axios for fetching the request, redux for state management library, Sweetalert to show the alert messages, bootstrap.
-            
             I used mongodb as a databse and i used mongoose because it is the most famous odm for mongodb
-            
             I used expressjs and nodejs and also used json webtoken for authentication but for now I did not create a session I prefer to store the token in the localStorage for now.`,
             image: 'Images/todoList.png',
             location: 'https://todo-list-six-lake.vercel.app/'
