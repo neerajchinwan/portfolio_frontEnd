@@ -13,11 +13,11 @@ function HomeShortDescription() {
         query: '(min-width:768px)'
     })
     const allProfileImage = [
-        'Images/profileImageOne.jpeg',
-        'Images/profileImageTwo.jpeg',
-        'Images/profileImageThree.jpeg',
-        'Images/profileImageFour.jpeg',
-        'Images/profileImageFive.jpeg'
+        'images/profileImageOne.jpeg',
+        'images/profileImageTwo.jpeg',
+        'images/profileImageThree.jpeg',
+        'images/profileImageFour.jpeg',
+        'images/profileImageFive.jpeg'
     ]
 
     const desktopStyle = {
