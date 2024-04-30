@@ -15,10 +15,10 @@ function MyProject(){
         },
         {
             id: 2,
-            image: 'Images/todoList.png',
+            image: 'Images/flaquiz.png',
             title: '2. Flag Quiz',
             description: `This a react practice which I made a simple game of guessing the flag of the countries and you got one point if you guess the right flag`,
-            location: 'https://todo-list-six-lake.vercel.app/'
+            location: 'https://flagquiz-five.vercel.app/'
         }
     ]
     return (<>
