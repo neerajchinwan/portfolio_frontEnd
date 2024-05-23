@@ -6,17 +6,24 @@ function MyProject(){
     const projectList = [
         {
             id: 1,
+            image: 'Images/astrix.png',
+            title: '1. Modern Design',
+            description: `This is only the front end part mainly build on react js and tailwind css and this is just a mordern design page.`,
+            location: "https://teal-souffle-221ae6.netlify.app/"
+        },
+        {
+            id: 2,
             image: 'Images/todoList.png',
-            title: '1. Todo List',
+            title: '2. Todo List',
             description: `This is the first project full stack project, I used react for front end and many other technologies for frontend like react hook form, axios for fetching the request, redux for state management library, Sweetalert to show the alert messages, bootstrap.
             I used mongodb as a databse and i used mongoose because it is the most famous odm for mongodb
             I used expressjs and nodejs and also used json webtoken for authentication but for now I did not create a session I prefer to store the token in the localStorage for now.`,
             location: "https://todo-list-six-lake.vercel.app/"
         },
         {
-            id: 2,
+            id: 3,
             image: 'Images/flagquiz.png',
-            title: '2. Flag Quiz',
+            title: '3. Flag Quiz',
             description: `This a react practice which I made a simple game of guessing the flag of the countries and you got one point if you guess the right flag`,
             location: 'https://flagquiz-five.vercel.app/'
         }
