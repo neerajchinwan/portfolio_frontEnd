@@ -9,7 +9,7 @@ function MyProject(){
             image: 'Images/movie.png',
             title: '1. Movie App',
             description: `This is complete MERN Project of showing movie and in this you can find  the filter, sorting, pagination and search functionality as of now I use the simple UI but I will change it.`,
-            location: "https://teal-souffle-221ae6.netlify.app/"
+            location: "https://movies-pearl-ten.vercel.app/"
         },
         {
             id: 2,
